@@ -7,7 +7,7 @@ import subprocess
 import os
 import tkinter as tk
 import webbrowser
-
+import sys
 
 documentation = '''
 ===============================================================================
@@ -51,7 +51,7 @@ except ModuleNotFoundError:
         print('Ending program...')
         raise NOINSTALL_ERROR
 
-
+import pygame
 def freeze_draw():
     freeze = pygame.image.load(os.path.join('images', 'snowflake.png'))
     freeze = pygame.transform.scale(freeze, (freeze.get_width() * 1 / 8, freeze.get_height() * 1 / 8)) 
